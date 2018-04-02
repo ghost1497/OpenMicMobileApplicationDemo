@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage , NavController} from 'ionic-angular';
+import { SearchPage } from '../search/search';
 
 /**
  * The Welcome Page is a splash page that quickly describes the app,
@@ -14,13 +15,13 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class WelcomePage {
 
-  constructor(public navCtrl: NavController) { }
+  btnText: any;
 
-  login() {
-    this.navCtrl.push('LoginPage');
+  constructor(public navCtrl: NavController) {
+    this.btnText = 'Search For Artists';
   }
 
-  signup() {
-    this.navCtrl.push('SignupPage');
+  startApplication() {
+    this.navCtrl.push('SearchPage');
   }
 }
