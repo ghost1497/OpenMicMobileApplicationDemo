@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage , NavController} from 'ionic-angular';
-import { SearchPage } from '../search/search';
 
 /**
  * The Welcome Page is a splash page that quickly describes the app,

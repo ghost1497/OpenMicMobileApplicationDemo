@@ -1,4 +1,18 @@
 page-search {
+  .splash-bg {
+    position: relative;
+    background: url('../assets/img/cityScape.jpg') no-repeat transparent;
+    background-size: cover;
+    height: 100%;
+    z-index: 0;
+    background-repeat: repeat-x;
+    animation: animatedBackground 50s linear infinite;
+  }
+
+  @keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
 
   .text-color{
     $text-color: color($colors, light);
