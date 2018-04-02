@@ -16,7 +16,7 @@ export class SearchPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public items: Items) { }
 
   logForm(){
-
+    this.navCtrl.push('CardsPage');
   }
 
 }

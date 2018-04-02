@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { IonicPage , NavController} from 'ionic-angular';
 
 /**
@@ -12,6 +12,7 @@ import { IonicPage , NavController} from 'ionic-angular';
   selector: 'page-welcome',
   templateUrl: 'welcome.html'
 })
+
 export class WelcomePage {
 
   btnText: any;

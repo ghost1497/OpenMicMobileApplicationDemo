@@ -1,10 +1,10 @@
-import { Component} from '@angular/core';
-import { StatusBar } from '@ionic-native/status-bar';
-import { Platform } from 'ionic-angular';
+import { Component } from "@angular/core";
+import { StatusBar } from "@ionic-native/status-bar";
+import { Platform } from "ionic-angular";
 import { WelcomePage } from "../pages/welcome/welcome";
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: "app.html"
 })
 export class MyApp {
   rootPage = WelcomePage;
@@ -12,7 +12,9 @@ export class MyApp {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
+      this.statusBar.overlaysWebView(false);
+      this.statusBar.backgroundColorByHexString("#209dc2");
+      this.statusBar.styleLightContent();
     });
   }
 }
